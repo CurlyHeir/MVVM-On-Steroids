@@ -1,5 +1,5 @@
 task :mock do 
-	sh "sourcery --sources ./MVVMOnSteroids --sources ./MVVMOnSteroidsTests --templates ./Pods/Mocky/Mocky/Templates --output MVVMOnSteroidsTests/Tests --disableCache --verbose"
+	sh "Pods/Sourcery/bin/sourcery --sources ./MVVMOnSteroids --sources ./MVVMOnSteroidsTests --templates ./Pods/Mocky/Mocky/Templates --output MVVMOnSteroidsTests/Tests --disableCache --verbose"
 end  
 
 desc "Install project dependencies"
